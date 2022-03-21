@@ -17,12 +17,14 @@ oc adm policy add-scc-to-group privileged system:authenticated system:serviceacc
 ~~~
 
 4. Check status
+~~~
 ./sonobuoy status                                                               
 
                PLUGIN    STATUS   RESULT   COUNT                                 PROGRESS
    openshift-e2e-cert   running                1   Passed:1905, Failed:  1, Remaining:964
 
 Sonobuoy is still running. Runs can take 60 minutes or more depending on cluster and plugin configuration.
+~~~
 
 5. Retrieve results
 ~~~
